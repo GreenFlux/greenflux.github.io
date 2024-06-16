@@ -64,7 +64,7 @@ body {
 
 .portfolio-card {
     transition: all 0.3s ease;
-    height: 360px;
+    height: 440px;
 }
 
 .portfolio-card:hover {
