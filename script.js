@@ -3,7 +3,7 @@
         {
             title: 'Writing Architect - Michigan State University',
             path: 'https://atruck.msu.domains/writing-architect/',
-            description: 'writing assessment tool developed for MSU, featured in 3 scientific journals. Funded by grant from the Institute of Education Sciences.',
+            description: 'Writing assessment tool developed for MSU study, featured in 3 scientific journals. Funded by grant from the Institute of Education Sciences.',
             image: 'images/wa logo.svg',
             tags: ['JavaScript', 'Qualtrics', 'FileMaker Pro']
         },

@@ -86,16 +86,18 @@ body {
     height: auto;
 }
 
-.about-content {
+
+.about-content, .social-content {
     display: flex;
     justify-content: space-between;
 }
 
-.about-text, .about-image {
+.about-text, .about-image, .social-image, .social-text {
     background-color: #fff;
     padding: 1rem;
     width: 50%;
 }
+
 
 .social-icon {
     transition: transform 0.3s;
