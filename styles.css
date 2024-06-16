@@ -1,0 +1,124 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: #07b50a;
+}
+
+.github {
+    height: 60px;
+    width: auto;
+}
+
+.banner {
+    background: url('./images/banner.png') no-repeat center center;
+    background-color: #22212133;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-text {
+    padding: 20px;
+}
+
+.transparent-bg {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    color: #fff;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-img-top {
+    height: 180px;
+    width: auto;
+}
+
+.portfolio-card {
+    transition: all 0.3s ease;
+    height: 360px;
+}
+
+.portfolio-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio, .about, .social {
+    padding: 5rem 0;
+    margin-top: 70px;
+}
+
+.about {
+    background-color: #f2f4f7;
+    padding: 80px;
+}
+
+.social {
+    padding: 80px;
+}
+
+.about-grid-item img,
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text, .about-image {
+    background-color: #fff;
+    padding: 1rem;
+    width: 50%;
+}
+
+.social-icon {
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .about-text, .about-image {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+.bi {
+    color: #414142;
+}
