@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: 'Verdana', sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Navbar Styles */
 .navbar {
     background-color: #fff;
     padding: 1rem;
@@ -22,6 +24,7 @@ body {
     width: auto;
 }
 
+/* Banner Styles */
 .banner {
     background: url('./images/banner.png') no-repeat center center;
     background-color: #22212133;
@@ -43,13 +46,20 @@ body {
     color: #fff;
 }
 
+/* Section Headers */
+.section-header {
+    padding: 1em;
+}
+
+/* Card Styles */
 .card-title {
     font-weight: bold;
 }
 
 .card-img-top {
     height: 180px;
-    width: auto;
+    width: 100%;
+    object-fit: contain; /* Shrink to fit, maintain aspect ratio */
 }
 
 .portfolio-card {
@@ -66,6 +76,7 @@ body {
     color: inherit;
 }
 
+/* Section Styles */
 .portfolio, .about, .social {
     padding: 5rem 0;
     margin-top: 70px;
@@ -86,7 +97,7 @@ body {
     height: auto;
 }
 
-
+/* Layout Flexbox Styles */
 .about-content, .social-content {
     display: flex;
     justify-content: space-between;
@@ -95,10 +106,9 @@ body {
 .about-text, .about-image, .social-image, .social-text {
     background-color: #fff;
     padding: 1rem;
-    width: 50%;
 }
 
-
+/* Social Icon Styles */
 .social-icon {
     transition: transform 0.3s;
 }
@@ -107,6 +117,7 @@ body {
     transform: scale(1.2);
 }
 
+/* Footer Styles */
 .footer {
     background-color: #333;
     color: #fff;
@@ -114,6 +125,7 @@ body {
     padding: 1rem 0;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .about-text, .about-image {
         flex: 1 1 100%;
@@ -121,6 +133,7 @@ body {
     }
 }
 
+/* Icon Color */
 .bi {
     color: #414142;
 }

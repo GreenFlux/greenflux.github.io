@@ -48,7 +48,7 @@
     portfolio.forEach(p => {
         const portfolioItem = `
             <div class="col-md-4">
-                <a href="${p.path}" class="card-link">
+                <a href="${p.path}" class="card-link" target="_blank">
                     <div class="card mb-4 portfolio-card">
                         <img src="${p.image}" class="card-img-top" alt="${p.title}">
                         <div class="card-body">
