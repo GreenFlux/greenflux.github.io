@@ -17,7 +17,7 @@
         {
             title: 'Appsmith - Friday Tech Workshops',
             path: 'https://www.youtube.com/@appsmith/search?query=friday',
-            description: 'Weekly series of Appsmith tutorial content on APIs, SQL, JavaScript, and all things Appsmith. 25+ videos!',
+            description: 'Weekly series of Appsmith tutorial content on APIs, SQL, JavaScript, and all things Appsmith. 52 videos!',
             image: 'images/appsmith-ftw.jpg',
             tags: ['JavaScript', 'Appsmith', 'Low-Code', 'Database']
         },
