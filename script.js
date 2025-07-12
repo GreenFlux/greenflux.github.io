@@ -67,4 +67,23 @@
         
         portfolioDiv.insertAdjacentHTML('beforeend', portfolioItem);
     });
+
+    // Parallax effect
+    let ticking = false;
+    
+    function updateParallax() {
+        const scrolled = window.pageYOffset;
+        const parallaxImage = document.querySelector('.parallax-image');
+        if (parallaxImage) {
+            parallaxImage.style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+        ticking = false;
+    }
+    
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(updateParallax);
+            ticking = true;
+        }
+    });
 })();
