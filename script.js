@@ -1,18 +1,11 @@
 (function () {
     const portfolio = [
         {
-            title: 'Writing Architect - Michigan State University',
-            path: 'portfolio/writing-architect/index.html',
-            description: 'Writing assessment tool developed for MSU study, featured in 4 scientific journals. Funded by grant from the Institute of Education Sciences.',
-            image: 'images/wa logo.svg',
-            tags: ['JavaScript', 'Qualtrics', 'FileMaker Pro']
-        },
-        {
-            title: 'Farm Co-op Weekly Harvest List',
-            path: 'portfolio/farm-co-op/index.html',
-            description: 'AppSheet app for farm co-ops, used by 4 co-ops of ~50 farms to manage weekly harvest lists for market.',
-            image: 'images/farm-co-op.png',
-            tags: ['JavaScript', 'Shopify', 'APIs', 'Google Apps Script']
+            title: 'GreenFlux, LLC - Founder',
+            path: 'https://greenflux.us/',
+            description: 'Dev agency focused on AI, Low-code and API integrations. Top Rated Plus (5 ⭐️) on UpWork - $200k+, Top Seller (5⭐️) on Fiverr.',
+            image: 'https://static.ucraft.net/fs/ucraft/userFiles/greenfluxdev/images/9901080480102-transparent-light-16065922370782.png',
+            tags: ['JavaScript', 'APIs', 'FileMaker Pro', 'AppSheet', 'Appsmith', 'Google Apps Script']
         },
         {
             title: 'Appsmith - Friday Tech Workshops',
@@ -22,6 +15,13 @@
             tags: ['JavaScript', 'Appsmith', 'Low-Code', 'Database']
         },
         {
+            title: 'Writing Architect - Michigan State University',
+            path: 'portfolio/writing-architect/index.html',
+            description: 'Writing assessment tool developed for MSU study, featured in 4 scientific journals. Funded by grant from the Institute of Education Sciences.',
+            image: 'images/wa logo.svg',
+            tags: ['JavaScript', 'Qualtrics', 'FileMaker Pro']
+        },
+        {
             title: 'Safety Clearance Database for Magnet Lab',
             path: 'portfolio/safety-clearance/index.html',
             description: 'Maintenance tracker for high-energy systems in a national laboratory, built in FileMaker Pro. Outstanding review from National Science Foundation.',
@@ -29,11 +29,11 @@
             tags: ['Database', 'FileMaker Pro']
         },
         {
-            title: 'GreenFlux, LLC - Founder',
-            path: 'https://greenflux.us/',
-            description: 'Dev agency focused on AI, Low-code and API integrations. Top Rated Plus (5 ⭐️) on UpWork - $200k+, Top Seller (5⭐️) on Fiverr.',
-            image: 'https://static.ucraft.net/fs/ucraft/userFiles/greenfluxdev/images/9901080480102-transparent-light-16065922370782.png',
-            tags: ['JavaScript', 'APIs', 'FileMaker Pro', 'AppSheet', 'Appsmith', 'Google Apps Script']
+            title: 'Farm Co-op Weekly Harvest List',
+            path: 'portfolio/farm-co-op/index.html',
+            description: 'AppSheet app for farm co-ops, used by 4 co-ops of ~50 farms to manage weekly harvest lists for market.',
+            image: 'images/farm-co-op.png',
+            tags: ['JavaScript', 'Shopify', 'APIs', 'Google Apps Script']
         },
         {
             title: 'AppSheet Community',
