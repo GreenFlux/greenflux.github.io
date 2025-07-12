@@ -19,10 +19,6 @@ body {
     color: #07b50a;
 }
 
-.github {
-    height: 60px;
-    width: auto;
-}
 
 /* Banner Styles */
 .banner {
@@ -59,12 +55,42 @@ body {
 .card-img-top {
     height: 180px;
     width: 100%;
-    object-fit: contain; /* Shrink to fit, maintain aspect ratio */
+    object-fit: contain;
+    padding: 12px;
+    border-radius: 8px;
 }
 
 .portfolio-card {
     transition: all 0.3s ease;
-    height: 440px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-card .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.portfolio-card .card-title {
+    height: 48px;
+    overflow: hidden;
+}
+
+.portfolio-card .card-text {
+    height: 120px;
+    overflow: hidden;
+}
+
+.portfolio-card .tags {
+    height: 104px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: #f8f9fa;
+    margin-top: auto;
 }
 
 .portfolio-card:hover {
@@ -77,18 +103,25 @@ body {
 }
 
 /* Section Styles */
-.portfolio, .about, .social {
+.portfolio, .about, .social-content {
     padding: 5rem 0;
     margin-top: 70px;
 }
 
-.about {
-    background-color: #f2f4f7;
-    padding: 80px;
+.portfolio-header {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+    margin-top: 70px;
 }
 
-.social {
-    padding: 80px;
+.portfolio-header-image {
+    max-height: 180px;
+    max-width: 300px;
+    object-fit: contain;
+}
+
+.about {
+    background-color: #f2f4f7;
 }
 
 .about-grid-item img,
@@ -97,16 +130,6 @@ body {
     height: auto;
 }
 
-/* Layout Flexbox Styles */
-.about-content, .social-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.about-text, .about-image, .social-image, .social-text {
-    background-color: #fff;
-    padding: 1rem;
-}
 
 /* Social Icon Styles */
 .social-icon {
@@ -117,6 +140,10 @@ body {
     transform: scale(1.2);
 }
 
+#social .container.d-flex.justify-content-center {
+    margin-bottom: 40px;
+}
+
 /* Footer Styles */
 .footer {
     background-color: #333;
@@ -125,12 +152,28 @@ body {
     padding: 1rem 0;
 }
 
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #4ba143;
+    text-decoration: none;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .about-text, .about-image {
         flex: 1 1 100%;
         text-align: center;
     }
+}
+
+/* Tag Color */
+.badge-green {
+    background-color: #4ba143 !important;
+    color: white;
 }
 
 /* Icon Color */

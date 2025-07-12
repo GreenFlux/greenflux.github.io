@@ -2,8 +2,8 @@
     const portfolio = [
         {
             title: 'Writing Architect - Michigan State University',
-            path: 'https://atruck.msu.domains/writing-architect/',
-            description: 'Writing assessment tool developed for MSU study, featured in 3 scientific journals. Funded by grant from the Institute of Education Sciences.',
+            path: 'portfolio/writing-architect/index.html',
+            description: 'Writing assessment tool developed for MSU study, featured in 4 scientific journals. Funded by grant from the Institute of Education Sciences.',
             image: 'images/wa logo.svg',
             tags: ['JavaScript', 'Qualtrics', 'FileMaker Pro']
         },
@@ -17,7 +17,7 @@
         {
             title: 'Appsmith - Friday Tech Workshops',
             path: 'https://www.youtube.com/@appsmith/search?query=friday',
-            description: 'Weekly series of Appsmith tutorial content on APIs, SQL, JavaScript, and all things Appsmith. 52 videos!',
+            description: 'Weekly series of Appsmith tutorial content on APIs, SQL, JavaScript, and all things Appsmith. 52 videos with over 50k views and 3.8k direct subscribers from one playlist!',
             image: 'images/appsmith-ftw.jpg',
             tags: ['JavaScript', 'Appsmith', 'Low-Code', 'Database']
         },
@@ -31,7 +31,7 @@
         {
             title: 'GreenFlux, LLC - Founder',
             path: 'https://greenflux.us/',
-            description: 'Dev agency focused on Low-code and API integrations. Top Rated Plus (5 ⭐️) on UpWork - $200k+, Top Seller (5⭐️) on Fiverr.',
+            description: 'Dev agency focused on AI, Low-code and API integrations. Top Rated Plus (5 ⭐️) on UpWork - $200k+, Top Seller (5⭐️) on Fiverr.',
             image: 'https://static.ucraft.net/fs/ucraft/userFiles/greenfluxdev/images/9901080480102-transparent-light-16065922370782.png',
             tags: ['JavaScript', 'APIs', 'FileMaker Pro', 'AppSheet', 'Appsmith', 'Google Apps Script']
         },
@@ -46,11 +46,14 @@
 
     const portfolioDiv = document.querySelector('.portfolio .row');
     portfolio.forEach(p => {
-        const tagsHtml = p.tags.map(t => `<span class="badge badge-secondary m-1">${t}</span>`).join('');
+        const tagsHtml = p.tags.map(t => `<span class="badge badge-green m-1">${t}</span>`).join('');
+        
+        const isExternal = p.path.startsWith('http');
+        const target = isExternal ? 'target="_blank"' : '';
         
         const portfolioItem = `
             <div class="col-md-4">
-                <a href="${p.path}" class="card-link" target="_blank">
+                <a href="${p.path}" class="card-link" ${target}>
                     <div class="card mb-4 portfolio-card">
                         <img src="${p.image}" class="card-img-top" alt="${p.title}">
                         <div class="card-body">

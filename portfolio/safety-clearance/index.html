@@ -7,45 +7,53 @@
 <title>GreenFlux Portfolio</title>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" type="image/x-icon" href="../../images/favicon.ico" />
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="../../images/logo.png" alt="GreenFlux Logo" class="logo" height="40">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
-            </ul>
-            <a href="https://github.com/GreenFlux" target="_blank" class="social-icon mx-2">
-                <i class="bi bi-github" style="font-size: 2rem;"></i>
-            </a>
-        </div>
-    </div>
-</nav>
-<section id="portfolio" class="portfolio">
-    <div class="container">
-        <h1>Project Title</h1>
-            <p>project details coming soon.</p>
+<div id="header-placeholder"></div>
+<section class="portfolio-header">
+    <div class="container text-center">
+        <img src="../../images/maglab.png" alt="Magnet Lab" class="portfolio-header-image mb-4">
+        <h1>Safety Clearance Database for Magnet Lab</h1>
     </div>
 </section>
-<footer class="footer">
+<section id="portfolio" class="portfolio">
     <div class="container">
-        <p>GreenFlux, LLC | Joseph Petty</p>
+        <h2>Project Overview</h2>
+        <p>High-security maintenance tracking system developed for the National High Magnetic Field Laboratory (MagLab), managing safety clearances and maintenance schedules for high-energy magnetic systems.</p>
+        
+        <h3>Project Overview</h3>
+        <p>This FileMaker Pro database system was designed to track safety clearances, maintenance schedules, and equipment status for critical high-energy systems at a national laboratory facility. The system received outstanding reviews from the National Science Foundation during facility audits.</p>
+        
+        <h3>Key Features</h3>
+        <ul>
+            <li><strong>Safety Clearance Tracking:</strong> Comprehensive personnel safety certification management</li>
+            <li><strong>Equipment Maintenance:</strong> Scheduled maintenance tracking for high-energy magnetic systems</li>
+            <li><strong>Compliance Reporting:</strong> NSF-compliant reporting and audit trail functionality</li>
+            <li><strong>Access Control:</strong> Multi-level security permissions for sensitive laboratory data</li>
+            <li><strong>Alert System:</strong> Automated notifications for upcoming maintenance and expiring clearances</li>
+        </ul>
+        
+        <h3>Technology</h3>
+        <ul>
+            <li><strong>Platform:</strong> FileMaker Pro Server</li>
+            <li><strong>Security:</strong> Advanced user privilege management</li>
+            <li><strong>Integration:</strong> Laboratory equipment monitoring systems</li>
+            <li><strong>Compliance:</strong> NSF audit requirements</li>
+        </ul>
+        
+        <h3>Impact</h3>
+        <p>The system significantly improved safety compliance and maintenance scheduling at the facility, contributing to the lab's outstanding NSF review. It streamlined operations while maintaining the highest safety standards required for high-energy magnetic field research.</p>
     </div>
-</footer>
+</section>
+<div id="footer-placeholder"></div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../../components/header.js"></script>
+<script src="../../components/footer.js"></script>
 </body>
 
 </html>

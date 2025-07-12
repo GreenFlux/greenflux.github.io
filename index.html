@@ -13,53 +13,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="images/logo.png"
-            alt="GreenFlux Logo"
-            class="logo"
-            height="40"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#social">Social</a>
-            </li>
-          </ul>
-          <a
-            href="https://github.com/GreenFlux"
-            target="_blank"
-            class="social-icon mx-2"
-          >
-            <i class="bi bi-github" style="font-size: 2rem"></i>
-          </a>
-        </div>
-      </div>
-    </nav>
+    <div id="header-placeholder"></div>
 
     <section id="home" class="banner">
       <div class="container transparent-bg banner-text">
@@ -129,16 +87,16 @@
         <div class="container">
             <h2 class="text-center section-header">Connect On Social</h2>
             <div class="container d-flex justify-content-center">
-                <a href="https://x.com/greenflux_dev" target="_blank" class="social-icon mx-2">
+                <a href="https://x.com/greenflux_dev" target="_blank" class="social-icon mx-3">
                     <i class="bi bi-twitter-x" style="font-size: 2rem"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/greenflux/" target="_blank" class="social-icon mx-2">
+                <a href="https://www.linkedin.com/in/greenflux/" target="_blank" class="social-icon mx-3">
                     <i class="bi bi-linkedin" style="font-size: 2rem"></i>
                 </a>
-                <a href="https://www.reddit.com/user/HomeBrewDude/" target="_blank" class="social-icon mx-2">
+                <a href="https://www.reddit.com/user/HomeBrewDude/" target="_blank" class="social-icon mx-3">
                     <i class="bi bi-reddit" style="font-size: 2rem"></i>
                 </a>            
-                <a href="https://www.youtube.com/@appsmith" target="_blank" class="social-icon mx-2">
+                <a href="https://www.youtube.com/@appsmith" target="_blank" class="social-icon mx-3">
                     <i class="bi bi-youtube" style="font-size: 2rem"></i>
                 </a>
             </div>
@@ -161,14 +119,12 @@
     </section>
     
 
-    <footer class="footer">
-      <div class="container">
-        <p>GreenFlux, LLC | Joseph Petty</p>
-      </div>
-    </footer>
+    <div id="footer-placeholder"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
