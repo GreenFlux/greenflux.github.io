@@ -71,23 +71,28 @@ body {
 }
 
 .card-img-top {
-    height: 180px;
+    height: 220px;
     width: 100%;
     object-fit: contain;
-    padding: 12px;
-    border-radius: 8px;
+    padding: 0;
+    border-radius: 0;
 }
 
 .portfolio-card {
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .portfolio-card .card-body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    padding: 2rem;
 }
 
 .portfolio-card .card-title {
@@ -101,7 +106,7 @@ body {
 }
 
 .portfolio-card .tags {
-    height: 104px;
+    min-height: 104px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -112,12 +117,53 @@ body {
 }
 
 .portfolio-card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card:hover .card-title {
+    color: #4ba143;
+}
+
+.portfolio-card:hover .card-text {
+    color: black;
 }
 
 .card-link {
     text-decoration: none;
     color: inherit;
+}
+
+/* Portfolio Container */
+.portfolio .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.portfolio .row {
+    margin: 0;
+    width: 100%;
+}
+
+.portfolio .col-md-4 {
+    padding: 0;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    min-width: 330px;
+}
+
+/* Responsive portfolio layout */
+@media (max-width: 1200px) {
+    .portfolio .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 /* Section Styles */
