@@ -1,0 +1,67 @@
+{
+  "title": "GreenFlux Portfolio",
+  "author": "Joseph Petty",
+  "company": "GreenFlux, LLC",
+  "position": "Head of Developer Relations @ Appsmith, Inc",
+  "tagline": "Work by Joseph Petty",
+  "about": {
+    "heading": "About Me",
+    "subtitle": "Nuclear plant operator, turned Freelancer, turned Developer Advocate.",
+    "paragraphs": [
+      "I found Appsmith because I kept hitting limitations in other platforms. They found me because I kept pushing the limits of their platform.",
+      "In 2022, I accepted a full-time position as a Senior Developer Advocate with Appsmith, and it has truly been an amazing journey.",
+      "Learning and teaching are my true passions, and Appsmith has enabled me to focus more on content creation and engaging with the community.",
+      "I'm no longer available for development work, but if you're looking for training or help troubleshooting a specific issue, feel free to reach out!"
+    ],
+    "image": "/images/selfie.jpg",
+    "upworkUrl": "https://www.upwork.com/freelancers/~0152ed293c1ad6de26"
+  },
+  "social": {
+    "heading": "Connect On Social",
+    "image": "/images/social.jpg",
+    "links": [
+      {
+        "name": "X (Twitter)",
+        "url": "https://x.com/greenflux_dev",
+        "icon": "twitter-x"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/greenflux/",
+        "icon": "linkedin"
+      },
+      {
+        "name": "Reddit",
+        "url": "https://www.reddit.com/user/HomeBrewDude/",
+        "icon": "reddit"
+      },
+      {
+        "name": "YouTube",
+        "url": "https://www.youtube.com/@appsmith",
+        "icon": "youtube"
+      }
+    ],
+    "resources": [
+      {
+        "title": "GreenFlux Blog",
+        "url": "https://blog.greenflux.us/"
+      },
+      {
+        "title": "Appsmith Community Portal",
+        "url": "https://community.appsmith.com/a/josephappsmith"
+      },
+      {
+        "title": "AppSheet Community Forums",
+        "url": "https://www.googlecloudcommunity.com/gc/user/viewprofilepage/user-id/312288"
+      },
+      {
+        "title": "FMSoup (FileMaker Pro) Forums",
+        "url": "https://the.fmsoup.org/u/greenflux/activity"
+      },
+      {
+        "title": "Low-Code Devs Squad on Daily.dev",
+        "url": "https://app.daily.dev/squads/lowcodedevs"
+      }
+    ]
+  }
+}

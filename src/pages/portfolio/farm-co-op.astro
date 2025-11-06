@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Farm Co-op Weekly Harvest List - GreenFlux Portfolio">
+  <Navigation />
+
+  <main class="pt-32 pb-32 px-6 sm:px-8 lg:px-12 min-h-screen">
+    <div class="max-w-4xl mx-auto">
+      <div class="mb-8">
+        <a href="/" class="text-green-primary hover:text-green-bright transition-colors inline-flex items-center gap-2">
+          <i data-lucide="arrow-left" class="w-5 h-5"></i>
+          Back to Portfolio
+        </a>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 text-text-primary">
+        Farm Co-op Weekly Harvest List
+      </h1>
+
+      <div class="bg-darker border border-gray-800 rounded p-8 mb-8">
+        <p class="text-xl text-text-secondary leading-relaxed">
+          AppSheet app for farm co-ops, used by 4 co-ops of ~50 farms to manage weekly harvest lists for market.
+        </p>
+      </div>
+
+      <div class="bg-darker border border-gray-800 rounded p-8">
+        <h2 class="text-2xl font-bold mb-4 text-text-primary">Technologies</h2>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-2 bg-gray-800 text-green-primary rounded-full border border-green-primary/30">JavaScript</span>
+          <span class="px-4 py-2 bg-gray-800 text-green-primary rounded-full border border-green-primary/30">Shopify</span>
+          <span class="px-4 py-2 bg-gray-800 text-green-primary rounded-full border border-green-primary/30">APIs</span>
+          <span class="px-4 py-2 bg-gray-800 text-green-primary rounded-full border border-green-primary/30">Google Apps Script</span>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-darker border border-gray-800 rounded p-8">
+        <p class="text-text-secondary text-center italic">
+          Project details coming soon.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="module">
+    import { createIcons, icons } from 'https://cdn.jsdelivr.net/npm/lucide@0.542.0/+esm';
+    createIcons({ icons });
+  </script>
+</Layout>

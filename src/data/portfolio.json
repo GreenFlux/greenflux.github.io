@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "id": "blog-graph",
+      "title": "Interactive Knowledge Graph of GreenFlux Blog",
+      "path": "https://greenflux-graph.vercel.app/",
+      "description": "Network visualization of blog posts and related tags. Click tags to see related posts and navigate through topics. Built with viz-network.js.",
+      "image": "/images/knowledge-graph.png",
+      "tags": ["Knowledge Graphs", "JavaScript", "Blog"]
+    },
+    {
+      "id": "ai-smiths",
+      "title": "AI Smiths Podcast Series",
+      "path": "https://www.youtube.com/playlist?list=PLE_KXGiWfqwgUfT51RYDPAim8MGNaB2dt",
+      "description": "Video Podcast on AI, recorded at DevRelCon NY 2025. Interviews with other DevRel and tech leaders, AI hot takes, and real-world AI use cases and challenges. ",
+      "image": "/images/ai-smiths.png",
+      "tags": ["AI", "Appsmith", "DevRel"]
+    },
+    {
+      "id": "writing-architect",
+      "title": "Writing Architect - Michigan State University",
+      "path": "https://atruck.msu.domains/writing-architect/",
+      "description": "Writing assessment tool developed for MSU study, featured in 4 scientific journals. Funded by grant from the Institute of Education Sciences.",
+      "image": "/images/wa-logo.jpg",
+      "tags": ["JavaScript", "Qualtrics", "FileMaker Pro", "PHP"]
+    },
+    {
+      "id": "appsmith-ftw",
+      "title": "Appsmith - Friday Tech Workshops",
+      "path": "https://www.youtube.com/@appsmith/search?query=friday",
+      "description": "Weekly series of Appsmith tutorial content on APIs, SQL, JavaScript, and all things Appsmith. 52 videos!",
+      "image": "/images/appsmith-ftw.jpg",
+      "tags": ["JavaScript", "Appsmith", "Low-Code", "Database"]
+    },
+    {
+      "id": "safety-clearance",
+      "title": "Safety Clearance Database for Magnet Lab",
+      "path": "/portfolio/safety-clearance",
+      "description": "Maintenance tracker for high-energy systems in a national laboratory, built in FileMaker Pro. Outstanding review from National Science Foundation.",
+      "image": "/images/maglab.png",
+      "tags": ["Database", "FileMaker Pro", "SQL"]
+    },
+    {
+      "id": "greenflux-llc",
+      "title": "GreenFlux, LLC - Founder",
+      "path": "https://greenflux.us/",
+      "description": "Dev agency focused on Low-code and API integrations. Top Rated Plus (5 ⭐︎) on UpWork - $200k+, Top Seller (5 ⭐︎) on Fiverr.",
+      "image": "/images/logo.png",
+      "tags": ["JavaScript", "APIs", "FileMaker Pro", "AppSheet", "Appsmith", "Google Apps Script"]
+    },
+    {
+      "id": "farm-co-op",
+      "title": "Farm Co-op Weekly Harvest List",
+      "path": "/portfolio/farm-co-op",
+      "description": "AppSheet app for farm co-ops, used by 4 co-ops of ~50 farms to manage weekly harvest lists for market.",
+      "image": "/images/farm-co-op.png",
+      "tags": ["JavaScript", "Shopify", "APIs", "Google Apps Script"]
+    },
+    {
+      "id": "appsheet-community",
+      "title": "AppSheet Community",
+      "path": "https://www.googlecloudcommunity.com/gc/user/viewprofilepage/user-id/312288",
+      "description": "Community freelancer and mentor. 1000+ Posts, 40+ solutions!",
+      "image": "/images/appsheet.png",
+      "tags": ["AppSheet", "Google Sheets", "Google Apps Script", "APIs"]
+    }
+  ]
+}

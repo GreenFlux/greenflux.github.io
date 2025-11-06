@@ -1,0 +1,13 @@
+---
+import siteData from '../data/site.json';
+
+const linkedinUrl = siteData.social.links.find((link: any) => link.name === 'LinkedIn')?.url || 'https://www.linkedin.com/in/greenflux/';
+---
+
+<footer class="bg-darker py-8 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-text-secondary">
+      <a href="https://greenflux.us/" target="_blank" rel="noopener noreferrer" class="hover:text-green-primary transition-colors no-underline">{siteData.company}</a> | <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" class="hover:text-green-primary transition-colors no-underline">{siteData.author}</a>
+    </p>
+  </div>
+</footer>

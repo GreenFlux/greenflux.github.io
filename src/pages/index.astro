@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import Portfolio from '../components/Portfolio.astro';
+import About from '../components/About.astro';
+import Social from '../components/Social.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="GreenFlux Portfolio">
+  <div id="scroll-progress"></div>
+  <Navigation />
+  <Hero />
+  <Portfolio />
+  <About />
+  <Social />
+  <Footer />
+
+  <script type="module">
+    import { createIcons, icons } from 'https://cdn.jsdelivr.net/npm/lucide@0.542.0/+esm';
+    createIcons({ icons });
+  </script>
+
+  <script>
+    // Console message
+    console.log("LET'S CONNECT: https://www.linkedin.com/in/greenflux/");
+
+    // Scroll progress bar
+    function updateScrollProgress() {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      const scrollableHeight = documentHeight - windowHeight;
+      const scrollPercentage = (scrollTop / scrollableHeight) * 100;
+
+      const progressBar = document.getElementById('scroll-progress');
+      if (progressBar) {
+        progressBar.style.width = scrollPercentage + '%';
+      }
+    }
+
+    window.addEventListener('scroll', updateScrollProgress);
+    window.addEventListener('resize', updateScrollProgress);
+    updateScrollProgress();
+  </script>
+</Layout>

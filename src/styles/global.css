@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  /* GreenFlux color palette - matching greenflux.us */
+  --color-dark: #0a0a0a;
+  --color-darker: #000000;
+  --color-green-primary: #00d600;
+  --color-green-bright: #00ff00;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a0a0a0;
+  --color-text-muted: #6b7280;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-text-primary);
+  font-family: 'Verdana', sans-serif;
+}
+
+/* Text selection */
+::selection {
+  background-color: var(--color-green-primary);
+  color: var(--color-darker);
+}
+
+::-moz-selection {
+  background-color: var(--color-green-primary);
+  color: var(--color-darker);
+}
+
+/* Focus styles */
+*:focus {
+  outline: 2px solid var(--color-green-primary);
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-green-primary);
+  outline-offset: 2px;
+}
+
+/* Scroll progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-green-primary), var(--color-green-bright));
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+/* Animated underline for links */
+.nav-link-animated {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link-animated::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--color-green-bright);
+  transition: width 0.3s ease-out;
+}
+
+.nav-link-animated:hover::after {
+  width: 100%;
+}
+
+/* Animated underline for regular links */
+a:not(.no-underline) {
+  position: relative;
+}
+
+.about a:not(.no-underline)::after,
+.social-content a:not(.no-underline)::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: var(--color-green-primary);
+  transition: width 0.3s ease-out;
+}
+
+.about a:not(.no-underline):hover::after,
+.social-content a:not(.no-underline):hover::after {
+  width: 100%;
+}
