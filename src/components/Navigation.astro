@@ -1,11 +1,12 @@
 ---
+import { Github, Menu } from 'lucide-astro';
 ---
 
 <nav class="fixed top-0 left-0 right-0 z-50 bg-dark border-b border-gray-800">
   <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
     <div class="flex justify-between items-center h-20">
       <a href="/" class="flex items-center" transition:name="logo">
-        <img src="/images/logo.png" alt="GreenFlux Logo" class="h-10" />
+        <img src="/images/logo.png" alt="GreenFlux Logo" loading="eager" fetchpriority="high" class="h-10" />
       </a>
 
       <div class="hidden md:flex items-center space-x-8">
@@ -16,13 +17,13 @@
         <a href="https://blog.greenflux.us" target="_blank" rel="noopener noreferrer" class="px-6 py-2 bg-green-primary hover:bg-green-bright text-darker font-bold rounded transition-all duration-300">
           BLOG
         </a>
-        <a href="https://github.com/GreenFlux" target="_blank" rel="noopener noreferrer" class="text-text-primary hover:text-green-primary transition-colors">
-          <i data-lucide="github" class="w-8 h-8"></i>
+        <a href="https://github.com/GreenFlux" target="_blank" rel="noopener noreferrer" class="text-text-primary hover:text-green-primary transition-colors" aria-label="GitHub Profile">
+          <Github class="w-8 h-8" />
         </a>
       </div>
 
-      <button id="mobile-menu-button" class="md:hidden text-text-primary hover:text-green-primary transition-colors">
-        <i data-lucide="menu" class="w-6 h-6"></i>
+      <button id="mobile-menu-button" class="md:hidden text-text-primary hover:text-green-primary transition-colors" aria-label="Toggle mobile menu" aria-expanded="false">
+        <Menu class="w-6 h-6" />
       </button>
     </div>
   </div>
@@ -37,7 +38,7 @@
         BLOG
       </a>
       <a href="https://github.com/GreenFlux" target="_blank" rel="noopener noreferrer" class="flex items-center text-text-primary hover:text-green-primary transition-colors py-2">
-        <i data-lucide="github" class="w-5 h-5 mr-2"></i> GitHub
+        <Github class="w-5 h-5 mr-2" /> GitHub
       </a>
     </div>
   </div>
@@ -49,13 +50,15 @@
     const mobileMenu = document.getElementById('mobile-menu');
 
     menuButton?.addEventListener('click', () => {
-      mobileMenu?.classList.toggle('hidden');
+      const isHidden = mobileMenu?.classList.toggle('hidden');
+      menuButton?.setAttribute('aria-expanded', isHidden ? 'false' : 'true');
     });
 
     const mobileLinks = mobileMenu?.querySelectorAll('a');
     mobileLinks?.forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu?.classList.add('hidden');
+        menuButton?.setAttribute('aria-expanded', 'false');
       });
     });
   });

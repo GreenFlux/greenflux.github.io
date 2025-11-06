@@ -5,9 +5,11 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  ogImage?: string;
 }
 
-const { title, description = 'Portfolio website for GreenFlux, LLC - Joseph Petty' } = Astro.props;
+const { title, description = 'Full-stack developer specializing in low-code platforms, APIs, and custom database solutions. Founder of GreenFlux, LLC.', ogImage = '/images/logo.png' } = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site || 'https://greenflux.github.io');
 ---
 
 <!doctype html>
@@ -17,7 +19,23 @@ const { title, description = 'Portfolio website for GreenFlux, LLC - Joseph Pett
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalUrl} />
     <title>{title}</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site || 'https://greenflux.github.io')} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(ogImage, Astro.site || 'https://greenflux.github.io')} />
+
     <ViewTransitions />
   </head>
   <body>

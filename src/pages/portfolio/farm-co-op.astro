@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
+import { ArrowLeft } from 'lucide-astro';
 ---
 
 <Layout title="Farm Co-op Weekly Harvest List - GreenFlux Portfolio">
@@ -11,7 +12,7 @@ import Footer from '../../components/Footer.astro';
     <div class="max-w-4xl mx-auto">
       <div class="mb-8">
         <a href="/" class="text-green-primary hover:text-green-bright transition-colors inline-flex items-center gap-2">
-          <i data-lucide="arrow-left" class="w-5 h-5"></i>
+          <ArrowLeft class="w-5 h-5" />
           Back to Portfolio
         </a>
       </div>
@@ -45,9 +46,4 @@ import Footer from '../../components/Footer.astro';
   </main>
 
   <Footer />
-
-  <script type="module">
-    import { createIcons, icons } from 'https://cdn.jsdelivr.net/npm/lucide@0.542.0/+esm';
-    createIcons({ icons });
-  </script>
 </Layout>
