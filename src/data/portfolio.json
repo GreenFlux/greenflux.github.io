@@ -33,6 +33,14 @@
       "tags": ["JavaScript", "Appsmith", "Low-Code", "Database"]
     },
     {
+      "id": "lightboard",
+      "title": "DIY Lightboard Studio",
+      "path": "https://www.youtube.com/shorts/87jDKf3Op0M",
+      "description": "Built a lightboard out of a glass desk and LED strip, and recorded/edited a short on knowledge graphs. 7.7k views & 300 likes from an experiment with homemade lightboard!",
+      "image": "/images/lightboard.png",
+      "tags": ["Knowledge Graphs", "Lightboard", "SQL", "Database"]
+    },
+    {
       "id": "safety-clearance",
       "title": "Safety Clearance Database for Magnet Lab",
       "path": "/portfolio/safety-clearance",
